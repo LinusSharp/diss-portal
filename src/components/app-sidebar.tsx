@@ -60,22 +60,6 @@ export function AppSidebar() {
             },
           ]}
         />
-
-        <SidebarGroup>
-          <SidebarGroupLabel>Other Sections</SidebarGroupLabel>
-          <SidebarGroupContent>
-            <SidebarMenu>
-              <SidebarMenuItem>
-                <SidebarMenuButton asChild>
-                  <Link href="#">
-                    <RefreshCw className="mr-2" />
-                    <span>Refresh Data</span>
-                  </Link>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </SidebarMenu>
-          </SidebarGroupContent>
-        </SidebarGroup>
       </SidebarContent>
 
       <SidebarSeparator />

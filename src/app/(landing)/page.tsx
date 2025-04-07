@@ -23,8 +23,8 @@ export default function LandingPage() {
       minWidth: 200.0,
       backgroundColor: 0xffffff,
       backgroundAlpha: 1.0,
-      color1: 0x10b981,
-      color2: 0x34d399,
+      color1: 0x0f766e,
+      color2: 0x5eead4,
       birdSize: 1.0,
       wingSpan: 30.0,
       speedLimit: 5.0,
@@ -40,25 +40,28 @@ export default function LandingPage() {
   }, [])
 
   return (
-    <main ref={vantaRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="relative z-10 max-w-2xl mx-auto p-8 bg-white/70 backdrop-blur-sm rounded-lg shadow-lg text-center">
-        <h2 className="text-5xl sm:text-6xl font-extrabold text-green-700 mb-6">
-          Welcome to FootfallForesight
-        </h2>
-        <p className="text-xl text-gray-800 mb-8">
-          Predict your venue’s footfall, refine predictions with real-time feedback, 
-          and make data-driven decisions to optimize operations.
+    <main
+      ref={vantaRef}
+      className="relative min-h-screen flex items-center  overflow-hidden"
+    >
+      <div className="relative z-10 max-w-2xl mx-auto p-8 bg-white backdrop-blur-sm rounded-2xl shadow-xl text-center">
+        <h1 className="text-5xl sm:text-6xl font-extrabold mb-6">
+          Stride
+        </h1>
+        <p className="text-xl font-medium text-gray-800 mb-2">
+          Step Ahead.
         </p>
-        <div>
-          <Link href="/setup">
-            <Button 
-              size="lg" 
-              className="bg-green-700/90 hover:bg-green-800 text-white font-semibold px-6 py-3"
-            >
-              Get Started
-            </Button>
-          </Link>
-        </div>
+        <p className="text-lg text-gray-700 mb-8">
+          Forecast foot traffic in real-time and make smarter staffing, stock, and marketing decisions before the day even begins.
+        </p>
+        <Link href="/dashboard">
+          <Button
+            size="lg"
+            className=" text-white font-semibold px-6 py-3"
+          >
+            Get Started
+          </Button>
+        </Link>
       </div>
     </main>
   )

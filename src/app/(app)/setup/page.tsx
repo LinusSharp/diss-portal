@@ -245,7 +245,7 @@ export default function SetupPage() {
             <DialogTitle>Processing Your Data</DialogTitle>
             <DialogDescription>
               Our team will now process your data and tune a model based on your
-              needs. You’ll be able to view predictions on the Predictions page
+              needs. You’ll be able to view predictions on the Dashboard page
               once this is ready.
             </DialogDescription>
           </DialogHeader>

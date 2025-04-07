@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import {
   Sidebar,
   SidebarContent,
@@ -40,20 +41,20 @@ export function AppSidebar() {
           items={[
             {
               title: "Dashboard",
-              url: "/(app)",
+              url: "/dashboard",
               icon: Home,
               isActive: false,
               items: [],
             },
             {
               title: "Setup",
-              url: "/(app)/setup",
+              url: "/setup",
               icon: Settings,
               items: [],
             },
             {
-              title: "View Predictions",
-              url: "/(app)/view",
+              title: "Historical Predictions",
+              url: "/view",
               icon: BarChart3,
               items: [],
             },
@@ -66,10 +67,10 @@ export function AppSidebar() {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <a href="#">
+                  <Link href="#">
                     <RefreshCw className="mr-2" />
                     <span>Refresh Data</span>
-                  </a>
+                  </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             </SidebarMenu>
@@ -83,10 +84,10 @@ export function AppSidebar() {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild>
-              <a href="#">
+              <Link href="/">
                 <User2 className="mr-2" />
-                <span>My Account</span>
-              </a>
+                <span>Log out</span>
+              </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>

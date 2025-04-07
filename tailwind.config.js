@@ -1,12 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-    "./public/index.html"
+    './src/app/**/*.{ts,tsx}', 
+    './src/components/**/*.{ts,tsx}',
+    // Include any shadcn UI config paths if necessary
   ],
   theme: {
-    extend: {},
+    extend: {
+      // Customize your light/off-white theme here if you want
+      colors: {
+        'off-white': '#f8f9fa',
+      },
+    },
   },
   plugins: [],
 }
-

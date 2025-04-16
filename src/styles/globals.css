@@ -4,8 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Your custom dark/light vars */
-
 :root {
 
   --radius: 0.625rem;
